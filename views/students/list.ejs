@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Students List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div class="container">
+        <h3><a href="/students">Busquedas</a></h3>
+        <h1>Students List</h1>
+        <h3>No de grupo</h3>
+        <h3><%= grupo%></h3>
+        
+        <% if(students.length>0) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Carne</th>
+                    <th>DPI</th>
+                    <th>Email</th>
+                    <th>Semestre</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <% for(var i=0; i<students.length;i++) { %>
+                <tr>
+                    <td><%= students[i].name%></td>
+                    <td><%= students[i].carne%></td>
+                    <td><%= students[i].dpi%></td>
+                    <td><%= students[i].email%></td>
+                    <td><%= students[i].semester%></td>
+                    <td><%= students[i].year%></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <% } else { %>
+        <div>No students found.</div>
+        <% } %>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Student</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/students">Busquedas</a></h3>
+      <h1>Edit Employee</h1>
+      <form action="/students/update/<%= student._id%>" method="post">
+        <table>
+          <tbody>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="name" value="<%= student.name%>" /></td>
+            </tr>
+            <tr>
+                <td>Carne</td>
+                <td><input type="text" name="carne"  value="<%= student.carne%>"/></td>
+            </tr>
+            <tr>
+                <td>DPI</td>
+                <td><input type="text" name="dpi"  value="<%= student.dpi%>"/></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email"  value="<%= student.email%>"/></td>
+            </tr>
+            <tr>
+                <td>Semestre</td>
+                <td><input type="text" name="semester"  value="<%= student.semester%>"/></td>
+            </tr>
+            <tr>
+                <td>Año</td>
+                <td><input type="text" name="year"  value="<%= student.year%>"/></td>
+            </tr>
+            <tr>
+                <td>No grupo</td>
+                <td><input type="text" name="no_group"  value="<%= student.no_group%>"/></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit">Update</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

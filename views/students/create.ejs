@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Student</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div class="container">
+        <h3><a href="/students">Busquedas</a></h3>
+        <h1>Create Student</h1>
+        <form action="/students/save" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" name="name" /></td>
+                    </tr>
+                    <tr>
+                        <td>Carne</td>
+                        <td><input type="text" name="carne" /></td>
+                    </tr>
+                    <tr>
+                        <td>DPI</td>
+                        <td><input type="text" name="dpi" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="email" /></td>
+                    </tr>
+                    <tr>
+                        <td>Semestre</td>
+                        <td><input type="text" name="semester" /></td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td><input type="text" name="year" /></td>
+                    </tr>
+                    <tr>
+                        <td>No grupo</td>
+                        <td><input type="text" name="no_group" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Guardar" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
