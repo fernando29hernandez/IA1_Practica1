@@ -22,5 +22,5 @@ router.get('/edit/:id', student.edit);
 // Edit update
 router.post('/update/:id', student.update);
 
-
+router.delete('/remove/:id', student.delete);
 module.exports = router;

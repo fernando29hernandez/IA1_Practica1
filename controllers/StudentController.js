@@ -84,4 +84,15 @@ studentController.update = function (req, res) {
     }
   );
 };
+studentController.delete = function(req, res) {
+  Student.remove({_id: req.params.id}, function(err) {
+    if(err) {
+      console.log(err);
+    }
+    else {
+      console.log("Student deleted!");
+      res.redirect("/students");
+    }
+  });
+};
 module.exports = studentController;

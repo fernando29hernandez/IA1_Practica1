@@ -15,26 +15,12 @@
         
         <% if(students.length>0) { %>
         <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Carne</th>
-                    <th>DPI</th>
-                    <th>Email</th>
-                    <th>Semestre</th>
-                    <th>Año</th>
-                </tr>
-            </thead>
             <tbody>
 
                 <% for(var i=0; i<students.length;i++) { %>
                 <tr>
-                    <td><%= students[i].name%></td>
                     <td><%= students[i].carne%></td>
-                    <td><%= students[i].dpi%></td>
                     <td><%= students[i].email%></td>
-                    <td><%= students[i].semester%></td>
-                    <td><%= students[i].year%></td>
                 </tr>
                 <% } %>
             </tbody>
